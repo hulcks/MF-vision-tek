@@ -297,6 +297,41 @@
 
     </footer>
 
+    <aside class="chatbot" aria-label="Assistant MF Vision Tech" data-chatbot>
+      <button class="chatbot-toggle" type="button" aria-label="Ouvrir le chatbot" aria-expanded="false" data-chatbot-toggle>
+        <span class="chatbot-toggle-icon" aria-hidden="true">IA</span>
+        <span class="chatbot-toggle-text">Besoin d'aide ?</span>
+      </button>
+
+      <div class="chatbot-panel" data-chatbot-panel>
+        <div class="chatbot-header">
+          <div>
+            <span class="chatbot-kicker">Assistant</span>
+            <h2>MF Vision Chat</h2>
+          </div>
+          <button class="chatbot-close" type="button" aria-label="Fermer le chatbot" data-chatbot-close>×</button>
+        </div>
+
+        <div class="chatbot-messages" aria-live="polite" data-chatbot-messages>
+          <div class="chatbot-message bot">
+            Bonjour, je suis l'assistant MF Vision Tech. Je peux vous orienter sur les services, projets, devis ou moyens de contact.
+          </div>
+        </div>
+
+        <div class="chatbot-suggestions" aria-label="Questions rapides">
+          <button type="button" data-chatbot-suggestion="Quels services proposez-vous ?">Services</button>
+          <button type="button" data-chatbot-suggestion="Comment demander un devis ?">Devis</button>
+          <button type="button" data-chatbot-suggestion="Comment vous contacter ?">Contact</button>
+        </div>
+
+        <form class="chatbot-form" data-chatbot-form>
+          <label class="sr-only" for="chatbot-input">Votre message</label>
+          <input id="chatbot-input" type="text" placeholder="Écrivez votre question..." autocomplete="off" data-chatbot-input />
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </aside>
+
     <script src="script.js"></script>
   </body>
 </html>
